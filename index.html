@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>KeyKonnect — Leasing Intelligence for Property Managers</title>
-  <meta name="description" content="KeyKonnect records and analyzes every leasing call, then delivers a weekly report that breaks down agent performance, flags compliance risks, and tells you exactly what's working and what isn't." />
+  <meta name="description" content="Other tools give you visibility. KeyKonnect gives you clarity. Every leasing call analyzed, scored, and delivered to your inbox weekly, before problems show up in your numbers." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet" />
@@ -126,8 +126,19 @@
       font-weight: 400;
       color: var(--gray-600);
       line-height: 1.65;
+      margin-bottom: 16px;
+      max-width: 480px;
+    }
+
+    .hero-clarity {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--navy);
+      border-left: 3px solid var(--teal);
+      padding-left: 14px;
       margin-bottom: 40px;
       max-width: 480px;
+      line-height: 1.55;
     }
 
     .hero-ctas {
@@ -261,12 +272,6 @@
       margin-bottom: 8px;
     }
 
-    .summary-text {
-      font-size: 12px;
-      color: var(--gray-600);
-      line-height: 1.6;
-    }
-
     .action-item {
       display: flex;
       gap: 10px;
@@ -356,6 +361,50 @@
       line-height: 1.4;
     }
 
+    /* GAP SECTION */
+    .gap-section {
+      background: var(--gray-50);
+      border-top: 1px solid var(--gray-200);
+      border-bottom: 1px solid var(--gray-200);
+      padding: 80px 48px;
+    }
+
+    .gap-inner {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .gap-eyebrow {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 28px;
+    }
+
+    .gap-text {
+      font-size: 19px;
+      color: var(--gray-600);
+      line-height: 1.75;
+      margin-bottom: 24px;
+    }
+
+    .gap-text strong {
+      color: var(--navy);
+      font-weight: 600;
+    }
+
+    .gap-punchline {
+      font-family: 'Sora', sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--navy);
+      border-left: 4px solid var(--teal);
+      padding-left: 20px;
+      line-height: 1.4;
+    }
+
     /* PROBLEM */
     .problem {
       padding: 100px 48px;
@@ -420,6 +469,92 @@
       color: var(--gray-600);
       line-height: 1.6;
     }
+
+    /* DATA VS INFORMATION */
+    .data-vs {
+      background: var(--navy);
+      padding: 80px 48px;
+    }
+
+    .data-vs-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .data-vs-left h2 {
+      font-family: 'Sora', sans-serif;
+      font-size: 34px;
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.2;
+      margin-bottom: 20px;
+      letter-spacing: -0.02em;
+    }
+
+    .data-vs-left h2 span { color: var(--teal); }
+
+    .data-vs-left p {
+      font-size: 16px;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .data-vs-left .hi-line {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--teal);
+      border: 1px solid rgba(20,184,166,0.3);
+      border-radius: 6px;
+      padding: 10px 16px;
+      display: inline-block;
+      margin-top: 4px;
+    }
+
+    .data-vs-right {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .vs-card {
+      border-radius: 10px;
+      padding: 20px 24px;
+    }
+
+    .vs-card.them {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .vs-card.us {
+      background: rgba(20,184,166,0.1);
+      border: 1px solid rgba(20,184,166,0.3);
+    }
+
+    .vs-tag {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .vs-card.them .vs-tag { color: rgba(255,255,255,0.35); }
+    .vs-card.us .vs-tag { color: var(--teal); }
+
+    .vs-line {
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    .vs-card.them .vs-line { color: rgba(255,255,255,0.5); }
+    .vs-card.us .vs-line { color: var(--white); }
 
     /* HOW IT WORKS */
     .how {
@@ -637,6 +772,14 @@
 
     .footer-links a:hover { color: rgba(255,255,255,0.7); }
 
+    .footer-hi {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--teal);
+      opacity: 0.8;
+      margin-top: 6px;
+    }
+
     /* RESPONSIVE */
     @media (max-width: 900px) {
       nav { padding: 0 24px; }
@@ -647,8 +790,13 @@
       .stats-strip { padding: 48px 24px; }
       .stats-strip-inner { grid-template-columns: repeat(2, 1fr); gap: 32px; }
       .strip-stat { border-right: none; padding: 0; text-align: left; }
+      .gap-section { padding: 60px 24px; }
+      .gap-text { font-size: 16px; }
+      .gap-punchline { font-size: 18px; }
       .pain-grid { grid-template-columns: 1fr; padding: 0 24px; }
       .problem { padding: 60px 24px; }
+      .data-vs { padding: 60px 24px; }
+      .data-vs-inner { grid-template-columns: 1fr; gap: 40px; }
       .how { padding: 60px 24px; }
       .steps { grid-template-columns: repeat(2, 1fr); gap: 40px; }
       .steps::before { display: none; }
@@ -693,8 +841,9 @@
   <section class="hero">
     <div class="hero-content fade-in">
       <div class="hero-eyebrow">Leasing Intelligence Platform</div>
-      <h1>Know exactly what's happening on every <span>leasing call.</span></h1>
-      <p class="hero-sub">KeyKonnect records and analyzes every leasing call, then delivers a weekly report that breaks down agent performance, flags compliance risks, and tells you exactly what's working and what isn't — without anyone having to listen to a single recording.</p>
+      <h1>KeyKonnect tells you before you <span>thought to look.</span></h1>
+      <p class="hero-sub">Every leasing call your team takes: recorded, analyzed, scored, and delivered to your inbox every Monday morning. No one listens to a single recording. You don't lift a finger.</p>
+      <p class="hero-clarity">Other tools give you visibility. KeyKonnect gives you clarity.</p>
       <div class="hero-ctas">
         <a href="https://calendly.com/matt-keykonnect/30min" target="_blank" class="btn-primary">Book a demo</a>
         <a href="#how" class="btn-secondary">See how it works →</a>
@@ -705,7 +854,7 @@
       <div class="report-card">
         <div class="report-card-header"></div>
         <div class="report-card-body">
-          <div class="report-label">PULSE — Property Unified Leasing Summary & Events</div>
+          <div class="report-label">PULSE — Property Unified Leasing Summary of Events</div>
           <div class="report-title">Weekly PULSE Check</div>
           <div class="report-property">290 Bremner Blvd, Toronto, ON M5V 3L9</div>
           <div class="report-meta">
@@ -767,12 +916,12 @@
         <div class="strip-label">Average time to read<br>a full PULSE report</div>
       </div>
       <div class="strip-stat">
-        <div class="strip-num">15<span style="font-size:28px;font-weight:500;opacity:0.7">+</span></div>
-        <div class="strip-label">Compliance acts monitored<br>on every single call</div>
+        <div class="strip-num">40<span style="font-size:28px;font-weight:500;opacity:0.7">+</span></div>
+        <div class="strip-label">Canadian compliance acts monitored<br>across every province &amp; territory</div>
       </div>
       <div class="strip-stat">
         <div class="strip-num">100%</div>
-        <div class="strip-label">Of calls recorded,<br>transcribed & analyzed</div>
+        <div class="strip-label">Of calls recorded,<br>transcribed &amp; analyzed</div>
       </div>
       <div class="strip-stat">
         <div class="strip-num">0</div>
@@ -781,12 +930,25 @@
     </div>
   </div>
 
+  <!-- THE GAP IT FILLS -->
+  <section class="gap-section">
+    <div class="gap-inner fade-in">
+      <div class="gap-eyebrow">Here's the gap it fills</div>
+      <p class="gap-text">
+        Ask a general-purpose AI to summarize a leasing call and it tells you what happened. <strong>Useful for a log entry. Useless on a Monday morning when you're managing 12 properties and 40 agents.</strong> A purpose-built tool, built around how leasing operations actually get managed, should do something more useful: form a view on performance, flag what's drifting, and tell you what to act on before it shows up in your vacancy numbers.
+      </p>
+      <div class="gap-punchline">
+        Your reports are fragmented and static. They show you data.<br>KeyKonnect presents information. The difference is interpretation.
+      </div>
+    </div>
+  </section>
+
   <!-- PROBLEM -->
   <section class="problem" id="problem">
     <div class="fade-in">
       <div class="section-eyebrow">The problem</div>
       <h2 class="section-title">Leasing calls are your biggest blind spot.</h2>
-      <p class="section-body">Dozens of prospect conversations happen every week at every property you oversee. You have no idea what's being said, what's being lost, or where your legal exposure is — until it's already a problem.</p>
+      <p class="section-body">Dozens of prospect conversations happen every week at every property you oversee. You have no idea what's being said, what's being lost, or where your legal exposure is. Until it's already a problem.</p>
     </div>
     <div class="pain-grid">
       <div class="pain-card fade-in">
@@ -797,25 +959,55 @@
       <div class="pain-card fade-in" style="transition-delay: 0.1s;">
         <div class="pain-icon">📋</div>
         <div class="pain-title">Managers: coaching without evidence</div>
-        <div class="pain-desc">You know some agents close and some don't. But you can't prove which behaviors are costing you tours, you can't coach what you can't see, and listening to recordings one by one isn't a scalable solution — so nothing changes.</div>
+        <div class="pain-desc">You know some agents close and some don't. But you can't prove which behaviors are costing you tours, you can't coach what you can't see, and listening to recordings one by one isn't a scalable solution. So nothing changes.</div>
       </div>
       <div class="pain-card fade-in" style="transition-delay: 0.2s;">
         <div class="pain-icon">⚖️</div>
         <div class="pain-title">Compliance exposure you don't know exists</div>
-        <div class="pain-desc">One sentence about family status, occupancy standards, or protected class characteristics on a leasing call can become a human rights complaint. It happens on calls no one is monitoring. You find out when a file lands on your desk.</div>
+        <div class="pain-desc">One sentence about family status, occupancy standards, or a protected characteristic on a leasing call can become a Human Rights Tribunal complaint. It happens on calls no one is monitoring. You find out when a file lands on your desk.</div>
       </div>
     </div>
 
     <div style="margin-top: 64px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px;" class="fade-in">
       <div style="background: var(--gray-50); border: 1px solid var(--gray-200); border-left: 4px solid var(--teal); border-radius: 12px; padding: 28px;">
         <div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--teal); margin-bottom: 12px;">For Asset Managers</div>
-        <p style="font-size: 15px; color: var(--navy); line-height: 1.7; margin-bottom: 16px;">"We pay a property management company to lease our units. We get a monthly report with occupancy numbers. We have no idea what's actually happening on their phones — whether agents are qualifying properly, handling objections, or saying things that create legal risk."</p>
-        <p style="font-size: 13px; color: var(--gray-400);">KeyKonnect gives asset managers an independent weekly view of leasing call performance — delivered directly, without going through the 3PM.</p>
+        <p style="font-size: 15px; color: var(--navy); line-height: 1.7; margin-bottom: 16px;">"We pay a property management company to lease our units. We get a monthly report with occupancy numbers. We have no idea what's actually happening on their phones: whether agents are qualifying properly, handling objections, or saying things that create legal risk."</p>
+        <p style="font-size: 13px; color: var(--gray-400);">KeyKonnect gives asset managers an independent weekly view of leasing call performance, delivered directly, without going through the 3PM.</p>
       </div>
       <div style="background: var(--gray-50); border: 1px solid var(--gray-200); border-left: 4px solid var(--navy); border-radius: 12px; padding: 28px;">
         <div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--navy); margin-bottom: 12px;">For Directors of Leasing</div>
         <p style="font-size: 15px; color: var(--navy); line-height: 1.7; margin-bottom: 16px;">"I manage eight properties and twelve agents. I know who my top performers are by feel. But I can't tell you specifically what they're doing differently, and I can't give a struggling agent concrete feedback because I haven't heard their calls."</p>
-        <p style="font-size: 13px; color: var(--gray-400);">KeyKonnect gives directors per-agent scorecards with exact call examples, coaching notes, and leasing fundamentals audits — every week, automatically.</p>
+        <p style="font-size: 13px; color: var(--gray-400);">KeyKonnect gives directors per-agent scorecards with exact call examples, coaching notes, and leasing fundamentals audits, every week, automatically.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DATA VS INFORMATION -->
+  <section class="data-vs">
+    <div class="data-vs-inner fade-in">
+      <div class="data-vs-left">
+        <h2>Your data has a <span>pulse.</span><br>We check its vitals.</h2>
+        <p>The data already lives with your leasing team: every call, every conversation, every missed opportunity. KeyKonnect doesn't create new information. It interprets what's already there and surfaces what matters, before you thought to ask.</p>
+        <p>That's the difference between a dashboard and an instruction manual. Between a report and a decision.</p>
+        <span class="hi-line">AI reads the calls. You make the calls. AI still requires HI.</span>
+      </div>
+      <div class="data-vs-right">
+        <div class="vs-card them">
+          <div class="vs-tag">What other tools give you</div>
+          <div class="vs-line">Call logs. Activity counts. Raw data sitting in a dashboard nobody opens.</div>
+        </div>
+        <div class="vs-card them">
+          <div class="vs-tag">What you're left doing</div>
+          <div class="vs-line">Pulling reports manually. Listening to recordings. Guessing what's wrong.</div>
+        </div>
+        <div class="vs-card us">
+          <div class="vs-tag">What KeyKonnect delivers</div>
+          <div class="vs-line">Interpreted information. Scored agents. Flagged risks. Clear next actions. Every Monday, automatically.</div>
+        </div>
+        <div class="vs-card us">
+          <div class="vs-tag">The result</div>
+          <div class="vs-line">You're not looking for problems. KeyKonnect tells you before you thought to look.</div>
+        </div>
       </div>
     </div>
   </section>
@@ -826,13 +1018,13 @@
       <div class="fade-in">
         <div class="section-eyebrow">How it works</div>
         <h2 class="section-title">Set it up once. Get answers every week.</h2>
-        <p class="section-body">KeyKonnect connects to your leasing phone line and handles everything automatically — no new hardware, no workflow changes for your agents.</p>
+        <p class="section-body">KeyKonnect connects to your leasing phone line and handles everything automatically. No new hardware, no workflow changes for your agents.</p>
       </div>
       <div class="steps">
         <div class="step fade-in">
           <div class="step-num">1</div>
           <div class="step-title">Connect your number</div>
-          <div class="step-desc">Each property gets a dedicated KeyKonnect number. Calls forward to your agent's existing phone — nothing changes for them.</div>
+          <div class="step-desc">Each property gets a dedicated KeyKonnect number. Calls forward to your agent's existing phone. Nothing changes for them.</div>
         </div>
         <div class="step fade-in" style="transition-delay: 0.1s;">
           <div class="step-num">2</div>
@@ -842,12 +1034,12 @@
         <div class="step fade-in" style="transition-delay: 0.2s;">
           <div class="step-num">3</div>
           <div class="step-title">Alerts fire instantly</div>
-          <div class="step-desc">If a keyword or compliance risk is detected, an alert email goes out immediately — no waiting for the weekly report.</div>
+          <div class="step-desc">If a keyword or compliance risk is detected, an alert email goes out immediately. No waiting for the weekly report.</div>
         </div>
         <div class="step fade-in" style="transition-delay: 0.3s;">
           <div class="step-num">4</div>
           <div class="step-title">PULSE report delivered</div>
-          <div class="step-desc">Every Monday morning, a full leasing performance report lands in your inbox. Agent scorecards, trends, coaching notes, and forward recommendations.</div>
+          <div class="step-desc">Every Monday morning, a full leasing intelligence report lands in your inbox. Agent scorecards, compliance vitals, coaching notes, and clear next actions.</div>
         </div>
       </div>
     </div>
@@ -861,23 +1053,21 @@
     </div>
     <div class="who-grid">
       <div class="who-card fade-in">
-        <div class="who-role">Asset Manager</div>
-        <div class="who-title">Hold your 3PM accountable — with data.</div>
-        <div class="who-desc">You own the asset. You need to know if leasing performance is on track — not in a quarterly review, but every week. KeyKonnect gives you an independent view of what's actually happening on the phones at every property you oversee.</div>
+        <div class="who-title">Hold your 3PM accountable with data.</div>
+        <div class="who-desc">You own the asset. You need to know if leasing performance is on track, not in a quarterly review, but every week. KeyKonnect gives you an independent view of what's actually happening on the phones at every property you oversee.</div>
         <ul class="who-points">
-          <li>Weekly report delivered directly to you — no requesting data from your 3PM</li>
-          <li>Compliance flags surface before they become legal exposure</li>
+          <li>Weekly report delivered directly to you. No requesting data from your 3PM</li>
+          <li>Compliance vitals surface before they become legal exposure</li>
           <li>Answer rate and conversion benchmarks across your portfolio</li>
           <li>No access required to your property manager's systems</li>
         </ul>
       </div>
       <div class="who-card fade-in" style="transition-delay: 0.1s;">
-        <div class="who-role">Director of Leasing / Property Manager</div>
         <div class="who-title">Coach your agents with evidence, not instinct.</div>
-        <div class="who-desc">You're responsible for leasing outcomes across multiple properties and agents. KeyKonnect tells you exactly who is performing, who needs coaching, and what specific behaviors are costing you tours.</div>
+        <div class="who-desc">You're responsible for leasing outcomes across multiple properties and agents. KeyKonnect tells you exactly who is performing, who needs coaching, and what specific behaviors are costing you tours, before you thought to ask.</div>
         <ul class="who-points">
           <li>Per-agent scorecards with real call examples, not generalizations</li>
-          <li>Leasing fundamentals audit — greeting, qualifying, CTA, contact confirmation</li>
+          <li>Leasing fundamentals audit: greeting, qualifying, CTA, contact confirmation</li>
           <li>Objection handling gaps identified with exact transcript moments</li>
           <li>Keyword alerts fire immediately when anything urgent is detected</li>
         </ul>
@@ -891,7 +1081,7 @@
       <div class="section-eyebrow">Pricing</div>
       <h2 class="section-title" style="margin: 0 auto 20px;">Simple, property-based pricing</h2>
       <p class="section-body" style="margin: 0 auto 36px;">Pricing scales with your portfolio. Most teams are up and running for less than you'd expect. Book a demo and we'll walk you through it.</p>
-      <a href="https://calendly.com/matt-keykonnect/30min" target="_blank" class="cta-btn">See Plans & Pricing</a>
+      <a href="https://calendly.com/matt-keykonnect/30min" target="_blank" class="cta-btn">See Plans &amp; Pricing</a>
     </div>
   </section>
 
@@ -900,7 +1090,7 @@
     <div class="fade-in">
       <div class="section-eyebrow">Get started</div>
       <h2 class="section-title">See a live PULSE report for your property.</h2>
-      <p class="section-body">Book a 30-minute demo and we'll walk you through a real PULSE report — built from actual leasing call data — so you can see exactly what your team would receive every week.</p>
+      <p class="section-body">Book a 30-minute demo and we'll walk you through a real PULSE report, built from actual leasing call data, so you can see exactly what your team would receive every week.</p>
       <a href="https://calendly.com/matt-keykonnect/30min" target="_blank" class="cta-btn">Book a demo</a>
       <p class="cta-sub">No commitment. No credit card. 30 minutes.</p>
     </div>
@@ -910,13 +1100,14 @@
   <footer>
     <div class="footer-logo">
       <img src="keykonnect_clean.png" alt="KeyKonnect" />
+      <div class="footer-hi">AI still requires HI.</div>
     </div>
     <div class="footer-copy">© 2026 KeyKonnect. All rights reserved.</div>
-<div class="footer-links">
+    <div class="footer-links">
       <a href="https://app.keykonnect.com">Log in</a>
       <a href="mailto:hello@keykonnect.com">Contact</a>
       <a href="/privacy.html">Privacy Policy</a>
-      <a href="/terms.html">Terms of Service</a  >
+      <a href="/terms.html">Terms of Service</a>
     </div>
   </footer>
 
