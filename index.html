@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KeyKonnect — Leasing Intelligence for Property Managers</title>
+  <title>KeyKonnect: Leasing Intelligence for Property Managers</title>
   <meta name="description" content="Other tools give you visibility. KeyKonnect gives you clarity. Every leasing call analyzed, scored, and delivered to your inbox weekly, before problems show up in your numbers." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -87,6 +87,34 @@
     .btn-demo:hover {
       background: var(--teal-dark);
       transform: translateY(-1px);
+    }
+
+    .nav-badge {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--gray-50);
+      border: 1px solid var(--gray-200);
+      border-radius: 20px;
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--navy);
+      white-space: nowrap;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .nav-badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--teal);
+      flex-shrink: 0;
     }
 
     /* HERO */
@@ -295,7 +323,7 @@
     .badge-float {
       position: absolute;
       right: -24px;
-      top: 48px;
+      bottom: -20px;
       background: var(--white);
       border: 1px solid var(--gray-200);
       border-radius: 10px;
@@ -750,10 +778,13 @@
     footer {
       background: var(--navy);
       padding: 48px;
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
       align-items: center;
-      justify-content: space-between;
     }
+
+    .footer-copy { justify-self: center; }
+    .footer-links { justify-self: end; }
 
     .footer-logo img { height: 28px; width: auto; filter: brightness(0) invert(1) opacity(0.7); }
 
@@ -787,6 +818,7 @@
       .hero { grid-template-columns: 1fr; gap: 48px; padding: 120px 24px 60px; }
       .hero h1 { font-size: 36px; }
       .badge-float { display: none; }
+      .nav-badge { display: none; }
       .stats-strip { padding: 48px 24px; }
       .stats-strip-inner { grid-template-columns: repeat(2, 1fr); gap: 32px; }
       .strip-stat { border-right: none; padding: 0; text-align: left; }
@@ -805,7 +837,8 @@
       .pricing-section { padding: 60px 24px; }
       .cta-section { padding: 80px 24px; }
       .cta-section .section-title { font-size: 32px; }
-      footer { flex-direction: column; gap: 24px; text-align: center; padding: 40px 24px; }
+      footer { grid-template-columns: 1fr; justify-items: center; gap: 24px; text-align: center; padding: 40px 24px; }
+      .footer-copy, .footer-links { justify-self: center; }
     }
 
     /* FADE IN */
@@ -831,10 +864,17 @@
     <ul class="nav-links">
       <li><a href="#how">How it works</a></li>
       <li><a href="#who">Who it's for</a></li>
+      <li><a href="/compliance.html">Compliance</a></li>
       <li><a href="https://calendly.com/matt-keykonnect/30min" target="_blank">Plans & Pricing</a></li>
       <li><a href="https://app.keykonnect.com">Log in</a></li>
     </ul>
-    <a href="https://calendly.com/matt-keykonnect/30min" target="_blank" class="btn-demo">Book a demo</a>
+    <div class="nav-right">
+      <div class="nav-badge">
+        <span class="nav-badge-dot"></span>
+        Compliant across every province &amp; territory
+      </div>
+      <a href="https://calendly.com/matt-keykonnect/30min" target="_blank" class="btn-demo">Book a demo</a>
+    </div>
   </nav>
 
   <!-- HERO -->
@@ -854,13 +894,13 @@
       <div class="report-card">
         <div class="report-card-header"></div>
         <div class="report-card-body">
-          <div class="report-label">PULSE — Property Unified Leasing Summary of Events</div>
+          <div class="report-label">PULSE: Property Unified Leasing Summary of Events</div>
           <div class="report-title">Weekly PULSE Check</div>
           <div class="report-property">290 Bremner Blvd, Toronto, ON M5V 3L9</div>
           <div class="report-meta">
             <span><strong>Period</strong> Apr 14 – Apr 20</span>
             <span><strong>Calls</strong> 18</span>
-            <span><strong>Generated</strong> Apr 21, 6:00 AM</span>
+            <span><strong>Generated</strong> Apr 21, 8:00 AM</span>
           </div>
           <div class="stat-grid">
             <div class="stat-cell">
@@ -889,13 +929,13 @@
             <span class="action-num" style="color: #EF4444;">01</span>
             <div>
               <div class="action-text">Review 2 compliance flags with legal counsel before contacting either prospect.</div>
-              <div class="action-detail">One call involves a family status remark — Ontario Human Rights Code</div>
+              <div class="action-detail">One call involves a family status remark under the Ontario Human Rights Code</div>
             </div>
           </div>
           <div class="action-item" style="border-left-color: #F59E0B; margin-top: 8px;">
             <span class="action-num" style="color: #F59E0B;">02</span>
             <div>
-              <div class="action-text">Review 3 missed calls during business hours — no coverage on record.</div>
+              <div class="action-text">Review 3 missed calls during business hours. No coverage on record.</div>
               <div class="action-detail">Wednesday and Thursday, 10 AM – 4 PM</div>
             </div>
           </div>
@@ -903,7 +943,7 @@
       </div>
       <div class="badge-float">
         <div class="badge-dot"></div>
-        Report delivered every Monday 6 AM
+        Report delivered every Monday 8 AM
       </div>
     </div>
   </section>
@@ -1049,7 +1089,7 @@
   <section class="who" id="who">
     <div class="fade-in">
       <div class="section-eyebrow">Who it's for</div>
-      <h2 class="section-title">Built for the people accountable for leasing performance.</h2>
+      <h2 class="section-title">Built for the Canadian leasing teams accountable for performance.</h2>
     </div>
     <div class="who-grid">
       <div class="who-card fade-in">
@@ -1106,6 +1146,7 @@
     <div class="footer-links">
       <a href="https://app.keykonnect.com">Log in</a>
       <a href="mailto:hello@keykonnect.com">Contact</a>
+      <a href="/compliance.html">Compliance</a>
       <a href="/privacy.html">Privacy Policy</a>
       <a href="/terms.html">Terms of Service</a>
     </div>
