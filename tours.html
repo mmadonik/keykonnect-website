@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Compliance Monitoring: KeyKonnect</title>
-  <meta name="description" content="What KeyKonnect watches for on every leasing call, and where the liability actually sits." />
+  <title>Tour Monitoring: KeyKonnect</title>
+  <meta name="description" content="KeyKonnect records and reviews in-person leasing tours for coaching and compliance, so you know what happened after the door opened." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet" />
@@ -124,9 +124,9 @@
 
     /* PAGE HEADER */
     .page-header {
-      max-width: 720px;
+      max-width: 760px;
       margin: 0 auto;
-      padding: 160px 24px 60px;
+      padding: 160px 24px 40px;
       text-align: center;
     }
 
@@ -153,7 +153,7 @@
       font-size: 17px;
       color: var(--gray-600);
       line-height: 1.65;
-      max-width: 540px;
+      max-width: 580px;
       margin: 0 auto;
     }
 
@@ -186,61 +186,181 @@
       margin-bottom: 48px;
     }
 
-    /* FLAG CATEGORIES */
-    .flags-section {
-      padding: 40px 48px 100px;
+    /* BLIND SPOT */
+    .blind-section {
+      padding: 20px 48px 90px;
       max-width: 1100px;
       margin: 0 auto;
     }
 
-    .flags-intro {
+    .blind-intro {
       font-size: 16px;
       color: var(--gray-600);
       line-height: 1.75;
       max-width: 760px;
-      margin: 0 auto 48px;
+      margin: 0 auto;
     }
 
-    .flag-grid {
+    /* HOW IT WORKS */
+    .how {
+      background: var(--gray-50);
+      border-top: 1px solid var(--gray-200);
+      border-bottom: 1px solid var(--gray-200);
+      padding: 90px 48px;
+    }
+
+    .how-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .steps {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
+      margin-top: 8px;
+      position: relative;
     }
 
-    .flag-card {
-      background: var(--gray-50);
-      border: 1px solid var(--gray-200);
-      border-radius: 12px;
-      padding: 28px;
+    .steps::before {
+      content: '';
+      position: absolute;
+      top: 28px;
+      left: 16%;
+      right: 16%;
+      height: 1px;
+      background: var(--gray-200);
+      z-index: 0;
     }
 
-    .flag-num {
+    .step {
+      text-align: center;
+      padding: 0 28px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .step-num {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--navy);
+      color: var(--white);
       font-family: 'Sora', sans-serif;
-      font-size: 13px;
+      font-size: 18px;
       font-weight: 800;
-      letter-spacing: 0.05em;
-      color: var(--teal);
-      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
     }
 
-    .flag-title {
+    .step-title {
       font-family: 'Sora', sans-serif;
       font-size: 16px;
       font-weight: 700;
       color: var(--navy);
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
-    .flag-desc {
+    .step-desc {
       font-size: 14px;
       color: var(--gray-600);
       line-height: 1.6;
     }
 
+    .consent-note {
+      max-width: 760px;
+      margin: 56px auto 0;
+      padding: 24px 28px;
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-left: 4px solid var(--teal);
+      border-radius: 10px;
+    }
+
+    .consent-title {
+      font-family: 'Sora', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+
+    .consent-text {
+      font-size: 14px;
+      color: var(--gray-600);
+      line-height: 1.65;
+    }
+
+    /* WHAT WE LISTEN FOR */
+    .listen-section {
+      padding: 100px 48px 90px;
+      max-width: 1196px;
+      margin: 0 auto;
+    }
+
+    .listen-group {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 56px;
+      padding: 48px 0;
+      border-top: 1px solid var(--gray-200);
+    }
+
+    .listen-group:first-of-type { margin-top: 8px; }
+
+    .group-name {
+      font-family: 'Sora', sans-serif;
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--navy);
+      letter-spacing: -0.01em;
+      margin-bottom: 10px;
+    }
+
+    .group-lede {
+      font-size: 14px;
+      color: var(--gray-600);
+      line-height: 1.6;
+    }
+
+    .listen-item {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--gray-100);
+    }
+
+    .listen-item:first-child { padding-top: 0; }
+    .listen-item:last-child { border-bottom: none; padding-bottom: 0; }
+
+    .item-title {
+      font-family: 'Sora', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+
+    .item-desc {
+      font-size: 15px;
+      color: var(--gray-600);
+      line-height: 1.65;
+      max-width: 640px;
+    }
+
+    .item-link {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--teal-dark);
+      text-decoration: none;
+    }
+
+    .item-link:hover { text-decoration: underline; }
+
     /* LEGAL CAVEAT */
     .legal-caveat {
-      max-width: 1004px;
-      margin: 32px auto 0;
+      margin: 8px 0 0;
       padding: 16px 20px;
       background: var(--gray-50);
       border: 1px solid var(--gray-200);
@@ -486,11 +606,17 @@
       .nav-right .btn-demo { display: none; }
       .nav-right { gap: 8px; }
       .nav-badge { display: none; }
-      .page-header { padding: 120px 24px 48px; }
+      .page-header { padding: 120px 24px 32px; }
       .page-header h1 { font-size: 32px; }
-      .flags-section { padding: 24px 24px 60px; }
-      .flag-grid { grid-template-columns: 1fr; }
-      .legal-caveat { margin: 24px 24px 0; }
+      .blind-section { padding: 16px 24px 60px; }
+      .how { padding: 60px 24px; }
+      .steps { grid-template-columns: 1fr; gap: 40px; }
+      .steps::before { display: none; }
+      .consent-note { margin-top: 40px; }
+      .listen-section { padding: 60px 24px; }
+      .section-title { font-size: 28px; }
+      .listen-group { grid-template-columns: 1fr; gap: 24px; padding: 36px 0; }
+      .legal-caveat { margin: 8px 0 0; }
       .liability-section { padding: 60px 24px; }
       .liability-text { font-size: 17px; }
       .liability-punchline { font-size: 19px; }
@@ -498,6 +624,11 @@
       footer { grid-template-columns: 1fr; justify-items: center; gap: 24px; text-align: center; padding: 40px 24px; }
       .footer-copy, .footer-links { justify-self: center; }
       .footer-links { flex-wrap: wrap; justify-content: center; gap: 12px 20px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .fade-in { opacity: 1; transform: none; transition: none; }
+      html { scroll-behavior: auto; }
     }
   </style>
 </head>
@@ -511,8 +642,8 @@
     <ul class="nav-links">
       <li><a href="/#how">How it works</a></li>
       <li><a href="/#who">Who it's for</a></li>
-      <li><a href="/tours.html">Tours</a></li>
-      <li><a href="/compliance.html" class="active">Compliance</a></li>
+      <li><a href="/tours.html" class="active">Tours</a></li>
+      <li><a href="/compliance.html">Compliance</a></li>
       <li><a href="https://calendly.com/matt-keykonnect/30min" target="_blank">Plans & Pricing</a></li>
       <li><a href="https://app.keykonnect.com">Log in</a></li>
     </ul>
@@ -536,8 +667,8 @@
     </div>
     <a href="/#how">How it works</a>
     <a href="/#who">Who it's for</a>
-    <a href="/tours.html">Tours</a>
-    <a href="/compliance.html" class="active">Compliance</a>
+    <a href="/tours.html" class="active">Tours</a>
+    <a href="/compliance.html">Compliance</a>
     <a href="https://calendly.com/matt-keykonnect/30min" target="_blank">Plans &amp; Pricing</a>
     <a href="https://app.keykonnect.com">Log in</a>
     <div class="mobile-menu-cta">
@@ -547,44 +678,138 @@
 
   <!-- PAGE HEADER -->
   <section class="page-header fade-in">
-    <div class="page-eyebrow">Compliance Monitoring</div>
-    <h1>What KeyKonnect watches for on every call.</h1>
+    <div class="page-eyebrow">Tour Monitoring</div>
+    <h1>The tour is where the lease is won. Now you can see it.</h1>
+    <p>KeyKonnect records and reviews your in-person showings the same way it reviews your leasing calls, so you know what happened after the door opened.</p>
   </section>
 
-  <!-- FLAG CATEGORIES -->
-  <section class="flags-section fade-in">
-    <p class="flags-intro">These aren't hypothetical categories. Ontario's Human Rights Code, British Columbia's Human Rights Code, and their equivalents in every other province and territory treat family status, disability, and the other categories below as protected grounds, meaning a single sentence on a leasing call can be enough to trigger a complaint. Most leasing operators have no visibility into whether that sentence was ever said. KeyKonnect reads every call and tells you if it was.</p>
+  <!-- BLIND SPOT -->
+  <section class="blind-section fade-in">
+    <p class="blind-intro">You can pull a call recording any time you want. Tours are different. Once a prospect walks into the unit, there's no record of what your agent said, what the prospect asked, or whether something was promised that shouldn't have been. Some agents walk every unit like they own the building. Some open the door and wait. Without a record, you can't tell which is which, and you can't coach what you never heard.</p>
+  </section>
 
-    <div class="flag-grid">
-      <div class="flag-card">
-        <div class="flag-num">01</div>
-        <div class="flag-title">Family & marital status</div>
-        <div class="flag-desc">Questions about kids, marital status, or family plans. A prospect's family situation has no bearing on their eligibility as a tenant, and asking about it directly is one of the most common compliance triggers on a leasing call.</div>
+  <!-- HOW IT WORKS -->
+  <section class="how" id="how">
+    <div class="how-inner">
+      <div class="fade-in">
+        <div class="section-eyebrow">How it works</div>
+        <h2 class="section-title">One tap to record. We handle the rest.</h2>
+        <p class="section-body">Your agents already carry a phone on every tour. That's all it takes.</p>
       </div>
-      <div class="flag-card">
-        <div class="flag-num">02</div>
-        <div class="flag-title">Disability & accommodation</div>
-        <div class="flag-desc">How an agent responds when a prospect discloses a disability or requests an accommodation. The obligation isn't just what's said, it's whether the request gets acknowledged and routed correctly.</div>
+      <div class="steps">
+        <div class="step fade-in">
+          <div class="step-num">1</div>
+          <div class="step-title">Tap to record</div>
+          <div class="step-desc">Your agent opens KeyKonnect on their phone, picks the property, confirms they've asked the visitor for permission, and taps record. There's nothing to install.</div>
+        </div>
+        <div class="step fade-in" style="transition-delay: 0.1s;">
+          <div class="step-num">2</div>
+          <div class="step-title">We do the listening</div>
+          <div class="step-desc">Every tour is transcribed with the agent and the visitor separated, then reviewed against the same coaching and compliance standards we apply to your calls.</div>
+        </div>
+        <div class="step fade-in" style="transition-delay: 0.2s;">
+          <div class="step-num">3</div>
+          <div class="step-title">Your Tour Report arrives weekly</div>
+          <div class="step-desc">Agent scorecards, coaching notes, concessions mentioned and compliance flags, all in one report in your inbox.</div>
+        </div>
       </div>
-      <div class="flag-card">
-        <div class="flag-num">03</div>
-        <div class="flag-title">Race, ethnicity & national origin</div>
-        <div class="flag-desc">Differences in tone, detail, or offer based on how someone sounds or where they're from. This flag catches disparate treatment, not just explicit language.</div>
+
+      <div class="consent-note fade-in">
+        <div class="consent-title">Recording starts with a conversation.</div>
+        <p class="consent-text">Before every tour, your agent asks the visitor for permission to record and confirms it in the app. Recording can't start until they do, and the confirmation is saved with the tour.</p>
       </div>
-      <div class="flag-card">
-        <div class="flag-num">04</div>
-        <div class="flag-title">Age-related screening</div>
-        <div class="flag-desc">Comments or questions that use a prospect's age, older or younger, as a filter for fit.</div>
+    </div>
+  </section>
+
+  <!-- WHAT WE LISTEN FOR -->
+  <section class="listen-section">
+    <div class="fade-in">
+      <div class="section-eyebrow">What we listen for</div>
+      <h2 class="section-title">Both sides of every tour.</h2>
+      <p class="section-body">A transcript tells you what was said. KeyKonnect tells you what it meant for the lease. Here's what we pick up on.</p>
+    </div>
+
+    <div class="listen-group fade-in">
+      <div>
+        <div class="group-name">The prospect</div>
+        <p class="group-lede">What they wanted, what they asked, and how the tour landed with them.</p>
       </div>
-      <div class="flag-card">
-        <div class="flag-num">05</div>
-        <div class="flag-title">Religion & citizenship</div>
-        <div class="flag-desc">Questions about religious practice, immigration status, or citizenship status that have no bearing on leasing eligibility.</div>
+      <div>
+        <div class="listen-item">
+          <div class="item-title">Prospect sentiment</div>
+          <p class="item-desc">Were they excited, lukewarm or checked out? We track where interest picked up and where it dropped off during the walkthrough.</p>
+        </div>
+        <div class="listen-item">
+          <div class="item-title">Prospect questions</div>
+          <p class="item-desc">Every question the prospect asked gets captured, from parking and pets to utilities and move-in dates. Over time you'll see what people actually want to know about each building.</p>
+        </div>
+        <div class="listen-item">
+          <div class="item-title">Stated needs</div>
+          <p class="item-desc">Commute, schools, budget, space and timing. If a prospect tells your agent what matters to them, it shows up in the report.</p>
+        </div>
+        <div class="listen-item">
+          <div class="item-title">Hesitations and concerns</div>
+          <p class="item-desc">Price, unit size, noise, the building down the street. You'll see what's holding people back before it shows up as a lost lease.</p>
+        </div>
+        <div class="listen-item">
+          <div class="item-title">Buying signals</div>
+          <p class="item-desc">Asking about applications, lease terms or availability dates. These are the moments that tell you a prospect was ready to move forward.</p>
+        </div>
       </div>
-      <div class="flag-card">
-        <div class="flag-num">06</div>
-        <div class="flag-title">Steering language</div>
-        <div class="flag-desc">Suggesting specific units, floors, or buildings based on who a prospect is rather than what they asked for. Steering is one of the harder violations to self-detect because it rarely sounds overtly wrong in the moment.</div>
+    </div>
+
+    <div class="listen-group fade-in">
+      <div>
+        <div class="group-name">The agent</div>
+        <p class="group-lede">How your team showed up, and where each person needs coaching.</p>
+      </div>
+      <div>
+        <div class="listen-item">
+          <div class="item-title">Engagement</div>
+          <p class="item-desc">Did the agent lead the tour or just unlock the door? Each agent gets a clear verdict: Strong, Satisfactory, or Needs Improvement.</p>
+        </div>
+        <div class="listen-item">
+          <div class="item-title">Building knowledge</div>
+          <p class="item-desc">How confidently did the agent answer questions about the unit, the building and the neighbourhood? Vague or wrong answers get flagged so you know where training is needed.</p>
+        </div>
+        <div class="listen-item">
+          <div class="item-title">Answers and responses</div>
+          <p class="item-desc">When a prospect asks something, did the agent actually answer it, or move on? We match questions to responses so nothing slips through.</p>
+        </div>
+        <div class="listen-item">
+          <div class="item-title">Objection handling</div>
+          <p class="item-desc">When price or a competing building comes up, you'll see exactly how your agent responded and whether it kept the prospect engaged.</p>
+        </div>
+        <div class="listen-item">
+          <div class="item-title">Next steps</div>
+          <p class="item-desc">Did the tour end with an application, a follow-up or a clear ask? Or did the prospect just walk out the door?</p>
+        </div>
+        <div class="listen-item">
+          <div class="item-title">Coaching notes</div>
+          <p class="item-desc">Specific moments pulled from the tour, covering what went well and what to work on, so feedback isn't based on a gut feeling.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="listen-group fade-in">
+      <div>
+        <div class="group-name">The risk</div>
+        <p class="group-lede">The things that cost you money or put you in front of a tribunal.</p>
+      </div>
+      <div>
+        <div class="listen-item">
+          <div class="item-title">Concessions</div>
+          <p class="item-desc">Free rent, free parking and waived fees said out loud during a tour get flagged, because that's money leaving the table.</p>
+        </div>
+        <div class="listen-item">
+          <div class="item-title">Compliance flags</div>
+          <p class="item-desc">The same human rights categories we monitor on calls also apply in person, from questions about family status to steering language.</p>
+          <a href="/compliance.html" class="item-link">See what KeyKonnect monitors for</a>
+        </div>
+        <div class="listen-item">
+          <div class="item-title">Promises made</div>
+          <p class="item-desc">Anything an agent commits to on a tour, like a repair, an upgrade or a move-in date, gets noted so it doesn't get lost after the prospect leaves.</p>
+        </div>
       </div>
     </div>
 
@@ -597,15 +822,15 @@
   <section class="liability-section fade-in">
     <div class="liability-inner">
       <div class="liability-eyebrow">Where the responsibility sits</div>
-      <p class="liability-text">Whether a person or an AI tool answers your leasing line, what they say on that call is your responsibility, not theirs. Most operators have no way of knowing what's actually being said on hundreds of calls a week.</p>
-      <div class="liability-punchline">KeyKonnect reads every one, so you do.</div>
+      <p class="liability-text">What your team says inside a unit carries the same weight as what they say on the phone. The difference is that nobody else is in the room, and afterward there's nothing to go back to.</p>
+      <div class="liability-punchline">Your leasing line isn't the only place your team speaks for you.</div>
     </div>
   </section>
 
   <!-- CTA -->
   <section class="cta-section fade-in">
-    <h2 class="section-title">See what it flags on your own calls.</h2>
-    <p>Book a 30-minute demo and we'll walk you through a real PULSE report.</p>
+    <h2 class="section-title">See what it picks up on your own tours.</h2>
+    <p>Book a 30-minute demo and we'll walk you through a real Tour Report.</p>
     <a href="https://calendly.com/matt-keykonnect/30min" target="_blank" class="btn-primary">Book a demo</a>
   </section>
 

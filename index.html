@@ -924,6 +924,17 @@
     body.menu-open { overflow: hidden; }
 
     /* RESPONSIVE */
+    .nav-links a, .btn-demo, .nav-badge { white-space: nowrap; }
+
+    @media (max-width: 1440px) {
+      nav { grid-template-columns: auto 1fr auto; gap: 24px; }
+      .nav-links { gap: 24px; }
+    }
+
+    @media (max-width: 1120px) {
+      .nav-badge { display: none; }
+    }
+
     @media (max-width: 900px) {
       nav { padding: 0 24px; }
       .nav-links { display: none; }
@@ -954,6 +965,7 @@
       .cta-section .section-title { font-size: 32px; }
       footer { grid-template-columns: 1fr; justify-items: center; gap: 24px; text-align: center; padding: 40px 24px; }
       .footer-copy, .footer-links { justify-self: center; }
+      .footer-links { flex-wrap: wrap; justify-content: center; gap: 12px 20px; }
     }
 
     /* FADE IN */
@@ -979,6 +991,7 @@
     <ul class="nav-links">
       <li><a href="#how">How it works</a></li>
       <li><a href="#who">Who it's for</a></li>
+      <li><a href="/tours.html">Tours</a></li>
       <li><a href="/compliance.html">Compliance</a></li>
       <li><a href="https://calendly.com/matt-keykonnect/30min" target="_blank">Plans & Pricing</a></li>
       <li><a href="https://app.keykonnect.com">Log in</a></li>
@@ -1003,6 +1016,7 @@
     </div>
     <a href="#how">How it works</a>
     <a href="#who">Who it's for</a>
+    <a href="/tours.html">Tours</a>
     <a href="/compliance.html">Compliance</a>
     <a href="https://calendly.com/matt-keykonnect/30min" target="_blank">Plans &amp; Pricing</a>
     <a href="https://app.keykonnect.com">Log in</a>
@@ -1281,6 +1295,7 @@
     <div class="footer-links">
       <a href="https://app.keykonnect.com">Log in</a>
       <a href="mailto:hello@keykonnect.com">Contact</a>
+      <a href="/tours.html">Tours</a>
       <a href="/compliance.html">Compliance</a>
       <a href="/privacy.html">Privacy Policy</a>
       <a href="/terms.html">Terms of Service</a>
