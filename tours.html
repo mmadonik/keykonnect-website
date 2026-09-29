@@ -636,6 +636,10 @@
       .fade-in { opacity: 1; transform: none; transition: none; }
       html { scroll-behavior: auto; }
     }
+
+    .footer-links { flex-wrap: wrap; justify-content: flex-end; gap: 10px 22px; }
+    .footer-links a { white-space: nowrap; }
+    @media (max-width: 900px) { .footer-links { justify-content: center; } }
   </style>
 </head>
 <body>
@@ -647,18 +651,18 @@
     </div>
     <ul class="nav-links">
       <li><a href="/#how">How it works</a></li>
-      <li><a href="/#who">Who it's for</a></li>
+      <li><a href="/#what">What we look for</a></li>
       <li><a href="/tours.html" class="active">Tours</a></li>
       <li><a href="/compliance.html">Compliance</a></li>
-      <li><a href="https://calendly.com/matt-keykonnect/30min" target="_blank">Plans & Pricing</a></li>
+      <li><a href="/pricing.html">Pricing</a></li>
       <li><a href="https://app.keykonnect.com">Log in</a></li>
     </ul>
     <div class="nav-right">
       <div class="nav-badge">
         <span class="nav-badge-dot"></span>
-        Compliant across every province &amp; territory
+        Compliance monitoring for every province &amp; territory
       </div>
-      <a href="https://calendly.com/matt-keykonnect/30min" target="_blank" class="btn-demo">Book a demo</a>
+      <a href="https://calendly.com/matt-keykonnect/30min" target="_blank" class="btn-demo">Get a free PULSE Check</a>
       <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -669,16 +673,16 @@
   <div class="mobile-menu" id="mobileMenu">
     <div class="mobile-menu-badge">
       <span class="nav-badge-dot"></span>
-      Compliant across every province &amp; territory
+      Compliance monitoring for every province &amp; territory
     </div>
     <a href="/#how">How it works</a>
-    <a href="/#who">Who it's for</a>
+    <a href="/#what">What we look for</a>
     <a href="/tours.html" class="active">Tours</a>
     <a href="/compliance.html">Compliance</a>
-    <a href="https://calendly.com/matt-keykonnect/30min" target="_blank">Plans &amp; Pricing</a>
+    <a href="/pricing.html">Pricing</a>
     <a href="https://app.keykonnect.com">Log in</a>
     <div class="mobile-menu-cta">
-      <a href="https://calendly.com/matt-keykonnect/30min" target="_blank" class="btn-demo">Book a demo</a>
+      <a href="https://calendly.com/matt-keykonnect/30min" target="_blank" class="btn-demo">Get a free PULSE Check</a>
     </div>
   </div>
 
@@ -837,7 +841,7 @@
   <section class="cta-section fade-in">
     <h2 class="section-title">See what you'll learn from your own tours.</h2>
     <p>Book a 30-minute demo and we'll walk you through a real Tour Report.</p>
-    <a href="https://calendly.com/matt-keykonnect/30min" target="_blank" class="btn-primary">Book a demo</a>
+    <a href="https://calendly.com/matt-keykonnect/30min" target="_blank" class="btn-primary">Get a free PULSE Check</a>
   </section>
 
   <!-- FOOTER -->
@@ -852,6 +856,7 @@
       <a href="mailto:hello@keykonnect.com">Contact</a>
       <a href="/tours.html">Tours</a>
       <a href="/compliance.html">Compliance</a>
+      <a href="/pricing.html">Pricing</a>
       <a href="/privacy.html">Privacy Policy</a>
       <a href="/terms.html">Terms of Service</a>
     </div>
